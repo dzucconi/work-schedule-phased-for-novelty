@@ -12,6 +12,8 @@
       }
       body {
         text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1;
       }
       .vco {
         display: table;
@@ -36,10 +38,28 @@
         font-weight: normal;
       }
       td {
-        width: 25%;
         padding: 1em 2em;
         border: 1px solid;
         text-align: center;
+      }
+      @media (max-width: 1024px) {
+        th:first-child > span {
+          display: none;
+        }
+        td {
+          padding: 0.75em 1em;
+        }
+      }
+      @media (max-width: 640px) {
+        body {
+          font-size: 11px;
+        }
+        table {
+          width: 100%;
+        }
+        td {
+          padding: 0.75em 1em;
+        }
       }
     </style>
   </head>
@@ -49,7 +69,9 @@
         <table>
           <thead>
             <tr>
-              <th>Week</th>
+              <th>
+                <span>Week</span>
+              </th>
               <th>Day</th>
               <th>Open</th>
               <th>Close</th>
