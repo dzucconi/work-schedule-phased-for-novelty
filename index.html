@@ -10,55 +10,60 @@
         height: 100%;
         margin: 0;
       }
+
       body {
-        text-transform: uppercase;
-        font-size: 16px;
+        font-size: 24px;
         line-height: 1;
+        font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+        -webkit-font-smoothing: antialiased;
       }
+
       .vco {
         display: table;
         width: 100%;
         height: 100%;
       }
+
       .vci {
         display: table-cell;
         height: 100%;
         width: 100%;
         vertical-align: middle;
-        padding: 2em;
+        padding: 1em;
       }
+
       table {
         margin: 0 auto;
         border-collapse: collapse;
-        width: 75%;
       }
-      th {
-        padding: 1em;
+
+      th,
+      td {
+        padding: 0.5em 0.75em;
         text-align: center;
+      }
+
+      th {
         font-weight: normal;
       }
+
       td {
-        padding: 1em;
-        border: 1px solid;
-        text-align: center;
+        border-top: 1px solid gray;
       }
-      @media (max-width: 1024px) {
+
+      @media (max-width: 640px) {
+        body {
+          font-size: 18px;
+        }
+
         th:first-child > span {
           display: none;
         }
-        td {
-          padding: 0.75em;
-        }
       }
-      @media (max-width: 640px) {
+
+      @media (max-width: 480px) {
         body {
-          font-size: 11px;
-        }
-        table {
-          width: 100%;
-        }
-        td {
-          padding: 0.5em;
+          font-size: 12px;
         }
       }
     </style>
@@ -81,218 +86,218 @@
             <tr>
               <td rowspan='7'>1</td>
               <td>Sunday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td rowspan='7'>2</td>
               <td>Sunday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td rowspan='7'>3</td>
               <td>Sunday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td rowspan='7'>4</td>
               <td>Sunday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td rowspan='7'>5</td>
               <td>Sunday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td rowspan='7'>6</td>
               <td>Sunday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
             <tr>
               <td>Monday</td>
-              <td>12:00:00 AM</td>
-              <td>04:00:00 AM</td>
+              <td>12 AM</td>
+              <td>4 AM</td>
             </tr>
             <tr>
               <td>Tuesday</td>
-              <td>04:00:00 AM</td>
-              <td>08:00:00 AM</td>
+              <td>4 AM</td>
+              <td>8 AM</td>
             </tr>
             <tr>
               <td>Wednesday</td>
-              <td>08:00:00 AM</td>
-              <td>12:00:00 PM</td>
+              <td>8 AM</td>
+              <td>12 PM</td>
             </tr>
             <tr>
               <td>Thursday</td>
-              <td>12:00:00 PM</td>
-              <td>04:00:00 PM</td>
+              <td>12 PM</td>
+              <td>4 PM</td>
             </tr>
             <tr>
               <td>Friday</td>
-              <td>04:00:00 PM</td>
-              <td>08:00:00 PM</td>
+              <td>4 PM</td>
+              <td>8 PM</td>
             </tr>
             <tr>
               <td>Saturday</td>
-              <td>08:00:00 PM</td>
-              <td>12:00:00 AM</td>
+              <td>8 PM</td>
+              <td>12 AM</td>
             </tr>
           </tbody>
         </table>
